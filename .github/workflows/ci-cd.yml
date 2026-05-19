@@ -23,9 +23,13 @@ jobs:
 
       - name: Запустить тесты
         run: python test_calculator.py   # Выполняем тесты
+      - name : Ещё один крутой тест
+        run: python test_test.py
 
       - name: Показать, что код работает
         run: python calculator.py
+      - name: Показать бесполезный код
+        run: newfile.py
 
   # JOB 2: РАЗВЕРТЫВАНИЕ (CD)
   deploy:
